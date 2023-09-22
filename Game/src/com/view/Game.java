@@ -52,7 +52,13 @@ public class Game {
 			}
 		
 		System.out.println("Deseja continuar ? 1 - Sim 0 - não" );
-				
+		int continuar = Game.teclado.nextInt();
+		if(continuar == 1) {
+			Game.jogar();
+	}else {
+		System.out.println("Você fez " + Game.pontos + "Ponto(S)");
+		System.out.println("Até mais");
+		System.exit(0);}
 	}
 
 }
